@@ -34,6 +34,22 @@
             <point key="canvasLocation" x="1727" y="-1063"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="rom-Xp-gIN">
+            <objects>
+                <viewController id="YZK-YT-4cN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nUB-Mf-Vq7">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="e4e-fL-70m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OZS-wk-fSI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQ4-90-HlO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="-339"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="kiU-Wr-PVN">
             <objects>
                 <viewController id="Zsc-SC-Cmy" sceneMemberID="viewController">
@@ -95,17 +111,18 @@
                     <connections>
                         <segue destination="Qd6-YK-e7A" kind="relationship" relationship="viewControllers" id="QhA-6h-4WZ"/>
                         <segue destination="Aw4-8B-20V" kind="relationship" relationship="viewControllers" id="ITZ-fK-o0r"/>
+                        <segue destination="LKf-H8-oQV" kind="relationship" relationship="viewControllers" id="GIT-x5-ODt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2AT-Wt-bCd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-51" y="-1461"/>
         </scene>
-        <!--Item 1-->
+        <!--About Me-->
         <scene sceneID="Ks8-ck-mkt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qd6-YK-e7A" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="nl1-AE-rID"/>
+                    <tabBarItem key="tabBarItem" title="About Me" image="person" catalog="system" id="nl1-AE-rID"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EW4-Hp-RxU">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
@@ -139,8 +156,28 @@
             </objects>
             <point key="canvasLocation" x="829" y="-1063"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Bhd-4V-GJ7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LKf-H8-oQV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zd9-8T-Ii0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="np9-QV-ctg">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YZK-YT-4cN" kind="relationship" relationship="rootViewController" id="uOS-Cu-Jma"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBL-o1-GiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="-339"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="person" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
